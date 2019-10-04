@@ -2,43 +2,46 @@
 	<!-- Section -->
 	<section>
 		<header>
-			<h2>Get in touch</h2>
+			<h2>Contact</h2>
 		</header>
 		<div class="content">
-			<p><strong>Auctor commodo</strong> interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis.</p>
+			<p>
+				In sectiunea <strong>contact</strong> de obicei se adauga un formular prin intermediul caruia potentialii clienti pot cere informatii suplimentare.
+				Pe langa formular, se recomanda sa fie afisate si alte informatii cum ar fi, numarul de telefon sau adresa fizica a firmei tale.
+			</p>
 			<form>
 				<div class="fields">
 					<div class="field half">
-						<input type="text" name="name" id="name" placeholder="Name" />
+						<input type="text" name="name" id="name" placeholder="Nume" />
 					</div>
 					<div class="field half">
-						<input type="email" name="email" id="email" placeholder="Email" />
+						<input type="email" name="email" id="email" placeholder="eMail" />
 					</div>
 					<div class="field">
-						<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+						<textarea name="message" id="message" placeholder="Mesaj" rows="7"></textarea>
 					</div>
 				</div>
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="button primary" /></li>
+					<li><input type="submit" value="Trimite Mesaj" class="button primary" /></li>
 				</ul>
 			</form>
 		</div>
 		<footer>
 			<ul class="items">
 				<li>
-					<h3>Email</h3>
+					<h3>eMail</h3>
 					<a href="mailto:{{ data.email }}">{{ data.email }}</a>
 				</li>
 				<li>
-					<h3>Phone</h3>
+					<h3>Telefon</h3>
 					<a href="#">(000) 123-1234</a>
 				</li>
 				<li>
-					<h3>Address</h3>
-					<span>Hack Land</span>
+					<h3>Adresa</h3>
+					<span>Constanta</span>
 				</li>
 				<li>
-					<h3>Social links</h3>
+					<h3>Link-uri</h3>
 					<ul class="icons">
 						<li><a href="{{ data.github   }}" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="{{ data.twitter  }}" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
@@ -50,4 +53,7 @@
 	</section>
 
 	<!-- Copyright -->
-	<div class="copyright">&copy; {{ data.copy }} - {{ data.app_title }}. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+	<div class="copyright">
+		&copy; {{ data.copy }} - <a href="{{ data.github }}">{{ data.app_title }}</a>. 
+		Design: <a href="https://html5up.net">HTML5 UP</a>.
+	</div>
